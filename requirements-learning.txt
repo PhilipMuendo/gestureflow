@@ -1,0 +1,3 @@
+# Optional: train and use a learned gesture classifier (python -m learning.train ...)
+scikit-learn>=1.3
+joblib>=1.3

@@ -1,0 +1,7 @@
+# Core runtime dependencies for GestureFlow (Python 3.10+).
+# MediaPipe itself depends on opencv-contrib-python, so we depend on the same package
+# instead of `opencv-python` to avoid two competing `cv2` installs.
+mediapipe>=0.10.14
+opencv-contrib-python>=4.8
+numpy>=1.24
+pillow>=10.0  # UI typography (MediaPipe's matplotlib dependency pulls it in too)
