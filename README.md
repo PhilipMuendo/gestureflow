@@ -28,6 +28,7 @@ rendering); everything runs locally, no cloud APIs.
 11. [Troubleshooting](#11-troubleshooting)
 12. [Future improvements](#12-future-improvements)
 - [Optional: learned classifier](#optional-learned-classifier) · [Testing](#testing) · [Configuration](#configuration) · [Known limitations](#known-limitations)
+- **Technical documentation:** [`docs/`](docs/README.md) - [architecture](docs/architecture.md) · [gesture recognition](docs/gesture-recognition.md) · [interaction & scene](docs/interaction-and-scene.md) · [UI & rendering](docs/ui-and-rendering.md) · [dataset & training](docs/dataset-and-training.md) · [extending](docs/extending.md) · [testing](docs/testing.md) · [configuration reference](docs/configuration.md)
 
 ---
 
@@ -175,7 +176,7 @@ gestureflow/
 ├── assets/fonts/           Inter (SIL Open Font License)
 ├── learning/               dataset format, recorder, trainer, synthetic-data generator
 ├── tools/                  download_model.py, make_screenshots.py
-└── tests/                  340 tests, none need a webcam
+└── tests/                  363 tests, none need a webcam
 ```
 
 Design rules that keep it clean: computer-vision code never imports rendering code; the scene never
@@ -474,7 +475,7 @@ then train on that.
 
 ```bash
 pip install -r requirements-dev.txt
-pytest                      # 340 tests, a few minutes (the learning tests train real models), no webcam
+pytest                      # 363 tests, a few minutes (the learning tests train real models), no webcam
 ruff check .                # lint (the codebase is clean)
 ```
 
